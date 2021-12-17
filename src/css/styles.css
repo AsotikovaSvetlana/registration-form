@@ -1,0 +1,138 @@
+@import './resetStyles.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.registration-form {
+  width: 40%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: white;
+}
+
+.registration-form__title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.registration-form__hint {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #767676;
+}
+
+.registration-form__input, .select {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  color: #767676;
+  outline: none;
+  border: 1px solid #767676;
+}
+
+.error-message {
+  position: absolute;
+  bottom: -17px;
+  left: 10px;
+  font-size: 12px;
+  color: red;
+}
+
+.registration-form__input:focus, .select:focus {
+  box-shadow: inset 0px 0px 3px 1px #0770cf;
+}
+
+.birthdate {
+  margin-bottom: 30px;
+}
+
+.selects-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-wrapper {
+  width: 32%;
+  position: relative;
+}
+
+.select {
+  display: block;
+  width: 100%;
+  appearance: none;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.select-wrapper::after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  margin-top: -3px;
+}
+
+.registration-form__button {
+  margin: auto;
+  display: block;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.registration-form__button:hover {
+  background-color: transparent;
+  color: #1c1c1c;
+}
+
+.registration-form__button:disabled {
+  background-color: transparent;
+  color: #1c1c1c;
+  cursor: not-allowed;
+}
+
+.button-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.send-form-message {
+  position: absolute;
+  bottom: -20px;
+  font-size: 16px;
+  color: rgb(81, 151, 12);
+}
